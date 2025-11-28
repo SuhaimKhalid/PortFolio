@@ -1,10 +1,11 @@
 import cv from "../assets/CV/SuhaimKhalid_CV.pdf";
 import profieImage from "../../public/Images/Profile_1.jpg";
 import { Slide } from "react-awesome-reveal";
+import { HeroBar } from "./HeroBar";
 export const HeroSection = () => {
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section  page">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-12 col-md-6  hero_image">
@@ -14,11 +15,11 @@ export const HeroSection = () => {
             </div>
             <div className="col-lg-6  col-sm-12 col-md-6 hero_description">
               <Slide direction="right">
+                <h1 className="h1_heroSection">Hi</h1>
                 <h2>
-                  {" "}
-                  I'm <span>Suhaim Khalid</span>
+                  My name is <span>Suhaim Khalid</span>
                 </h2>
-                <h3>Software Developer</h3>
+                <h3>and I am a Software Developer</h3>
                 <p>
                   <a className="resume-btn" href={cv}>
                     CV
@@ -28,6 +29,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
+        <HeroBar />
       </section>
     </>
   );

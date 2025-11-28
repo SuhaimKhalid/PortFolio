@@ -1,36 +1,42 @@
+// import html from "../../public/Icons/Html.png";
+// import css from "../../public/Icons/Css.png";
+// import bootstrap from "../../public/Icons/Bootstrap.png";
+// import javascript from "../../public/Icons/JS4.png";
+// import jquery from "../../public/Icons/Jquery.png";
+// import react from "../../public/Icons/React.png";
+// import node from "../../public/Icons/Node1.png";
+// import express from "../../public/Icons/Express js.png";
+// import sql from "../../public/Icons/Postgre.png";
+// import git from "../../public/Icons/Github.png";
 export const HeroBar = () => {
   return (
     <>
       <section className="hero_bar">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-sm-12 col-md-12 col-lg-4">
-              <article className="text_area">
-                <div className="inner_area">
-                  <h3>2</h3>
-                  <p>YEARS OF EXPERIENCE</p>
-                </div>
-                <div className="inner_area">
-                  <h3>
-                    100<sup>+</sup>
-                  </h3>
-                  <p>Static Websites Created</p>
-                </div>
-              </article>
+            <div className="col-lg-3 col-sm-12">
+              <div className="bar_item">
+                <div className="bar_image"></div>
+                <div className="bar_text">2 Years oF Experience</div>
+              </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-12 col-lg-8">
-              <article className="images_area">
-                <img src="Assets/images/Icons/Html.png" alt="Html Logo" />
-                <img src="Assets/images/Icons/Css.png" alt="CSS Logo" />
-                <img
-                  src="Assets/images/Icons/Bootstrap.png"
-                  alt="BootStrap Logo"
-                />
-                <img src="Assets/images/Icons/JS4.png" alt="JavaScript Logo" />
-                <img src="Assets/images/Icons/Jquery.png" alt="J-Query Logo" />
-                <img src="Assets/images/Icons/React.png" alt="React Logo" />
-                <img src="Assets/images/Icons/Github.png" alt="GitHub Logo" />
-              </article>
+            <div className="col-lg-3 col-sm-12">
+              <div className="bar_item">
+                <div className="bar_image"></div>
+                <div className="bar_text">100+ Static Websites</div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-12">
+              <div className="bar_item">
+                <div className="bar_image"></div>
+                <div className="bar_text">Porblem Solver</div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-12">
+              <div className="bar_item">
+                <div className="bar_image"></div>
+                <div className="bar_text">Team Player</div>
+              </div>
             </div>
           </div>
         </div>

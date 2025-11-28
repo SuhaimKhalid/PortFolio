@@ -94,7 +94,25 @@ nav ul li .nav-link {
   padding-top: 65px;
   padding-bottom: 46px;
 }
+.h1_heroSection {
+  color: var(--Primary-color);
+  text-align: center;
+  font-size: 100px;
+  transform-origin: bottom center; /* Important: makes it wave like a hand */
+  animation: wave 1.5s ease-in-out infinite;
+}
 
+@keyframes wave {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(15deg); /* tilt right */
+  }
+  100% {
+    transform: rotate(-20deg); /* back to normal */
+  }
+}
 .hero-section .hero_image img {
   width: 300px;
   height: 300px;
@@ -158,6 +176,23 @@ nav ul li .nav-link {
 /* ============================= */
 
 /* Hero Bar Section Start */
+.experience-bar {
+  background: #facc15; /* yellow-400 */
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 15px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.experience-bar .item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
 .hero_bar {
   background-color: var(--Primary-color);
   padding: 10px 0px;
@@ -226,7 +261,7 @@ nav ul li .nav-link {
 
 .about_section p span {
   color: var(--Primary-color);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 /* About Section End */
 
@@ -901,4 +936,85 @@ footer .upper_Footer {
     width: 60%;
   }
   /* Footer Section 992px  End*/
+}
+
+.dial-icons {
+  position: relative;
+  border: 3px solid #0d6efd;
+  border-radius: 50%;
+  background: #f6f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dial-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.dial-icon:hover {
+  transform: scale(1.3);
+  z-index: 10;
+}
+
+.dial-center {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0d6efd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+.dial-icons {
+  position: relative;
+  border: 3px solid #0d6efd;
+  border-radius: 50%;
+  background: #f6f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: none; /* for dragging */
+  user-select: none;
+  cursor: grab;
+}
+
+.icons-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.dial-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.dial-icon:hover {
+  transform: scale(1.3);
+  z-index: 10;
+}
+
+.dial-center {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #0d6efd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
 }
