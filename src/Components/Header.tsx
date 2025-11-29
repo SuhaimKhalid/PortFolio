@@ -35,7 +35,7 @@ export const Header = () => {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#work">
-                    Work
+                    Projects
                   </a>
                 </li>
                 <li className="nav-item">

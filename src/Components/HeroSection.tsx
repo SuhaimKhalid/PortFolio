@@ -33,10 +33,8 @@ export const HeroSection = () => {
           </div>
         </div>
       </section>
-      <Slide direction="down">
-        {" "}
-        <HeroBar />
-      </Slide>
+
+      <HeroBar />
     </>
   );
 };

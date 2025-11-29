@@ -239,6 +239,8 @@ nav ul li .nav-link {
 }
 .bar_text {
   font-size: 18px;
+  color: var(--dark-color);
+  font-weight: 700;
 }
 .bar_image img {
   width: 50px;
@@ -277,6 +279,10 @@ nav ul li .nav-link {
   color: var(--Primary-color);
   /* text-transform: uppercase; */
 }
+.dial_div {
+  display: flex;
+  justify-content: center;
+}
 /* About Section End */
 
 /* ================================= */
@@ -286,7 +292,7 @@ nav ul li .nav-link {
 .experience_section {
   background-color: var(--light-dark-color);
   color: white;
-  padding-bottom: 20px;
+  padding: 70px 0px 20px;
 }
 
 .experience_section .row {
@@ -299,7 +305,6 @@ nav ul li .nav-link {
 .experience_section .container > h3 {
   font-size: 40px;
   position: relative;
-  top: -24px;
 }
 
 .experience_section .container > h3::after {
@@ -733,6 +738,17 @@ footer .upper_Footer {
   }
   /* Navbar section 992px End */
   /* ======================= */
+
+  /* Hero bar start*/
+  .bar_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 20px 0px;
+  }
+  /* Hero Bar end */
 
   /* Work Section 992px start */
   .work_section .grid_container {

@@ -1,7 +1,7 @@
 import star from "../../public/Icons/star-white-icon.png";
-import achivement from "../../public/Icons/achivement 2.png";
+import achivement from "../../public/Icons/achivement.png";
 import idea from "../../public/Icons/problem-solver.png";
-import teamwork from "../../public/Icons/teamwork black.png";
+import teamwork from "../../public/Icons/teamwork.png";
 export const HeroBar = () => {
   return (
     <>

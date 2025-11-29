@@ -8,7 +8,7 @@ import { HeroSection } from "./Components/HeroSection";
 import "animate.css";
 
 import { About } from "./Components/About";
-import { Experience } from "./Components/Expresence";
+import { Experience } from "./Components/Expreience";
 import { Projects } from "./Components/Projects";
 import { SKills } from "./Components/Skills";
 import { Footer } from "./Components/Footer";

@@ -44,25 +44,14 @@ export const Footer = () => {
             <ul className="social_links">
               <li>
                 <a
-                  href="https://www.facebook.com/profile.php?id=100005961014921"
+                  href="https://www.linkedin.com/in/suhaimkhalid"
                   target="_blank"
                 >
-                  <i className="fab fa-facebook"></i>
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/suhaimkhalid/"
-                  target="_blank"
-                >
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/SuhaimKhalid007?fbclid=IwAR17IJFBdNFKGTm0Gc3VaPE2HLSbHaTsNrtPgua4J8W8qZX7HjESeANl-l4"
-                  target="_blank"
-                >
+                <a href="https://github.com/SuhaimKhalid" target="_blank">
                   <i className="fab fa-github"></i>
                 </a>
               </li>
