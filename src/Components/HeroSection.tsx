@@ -2,6 +2,7 @@ import cv from "../assets/CV/SuhaimKhalid_CV.pdf";
 import profieImage from "../../public/Images/Profile_1.jpg";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { HeroBar } from "./HeroBar";
+
 export const HeroSection = () => {
   return (
     <>
@@ -32,7 +33,10 @@ export const HeroSection = () => {
           </div>
         </div>
       </section>
-      <HeroBar />
+      <Slide direction="down">
+        {" "}
+        <HeroBar />
+      </Slide>
     </>
   );
 };

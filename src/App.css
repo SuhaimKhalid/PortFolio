@@ -316,6 +316,7 @@ nav ul li .nav-link {
 
 .experience_section .exp_years h3 {
   font-size: 30px;
+  padding-bottom: 10px;
   color: var(--Primary-color);
 }
 
