@@ -2,7 +2,7 @@ import { Header } from "./Components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
-import "./index.css";
+
 import { HeroSection } from "./Components/HeroSection";
 
 import "animate.css";

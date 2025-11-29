@@ -1,4 +1,4 @@
-.page-container {
+/* .page-container {
   scroll-snap-type: y mandatory;
   height: 100vh;
   overflow-y: scroll;
@@ -17,12 +17,16 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
-.scoll_container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
+
 .page {
   height: 100vh;
   scroll-snap-align: start;
 }
+.hero-section {
+  margin-top: 100px;
+  height: 90vh;
+  scroll-snap-align: start;
+}
+.hero_bar {
+  height: 10vh;
+} */

@@ -89,8 +89,9 @@ nav ul li .nav-link {
 
 /* Hero Section Start */
 .hero-section {
+  margin: 100px 0px;
   background-color: var(--dark-color);
-  margin-top: 65px;
+
   padding-top: 65px;
   padding-bottom: 46px;
 }
@@ -228,6 +229,19 @@ nav ul li .nav-link {
 
 .hero_bar .images_area img {
   width: 82px;
+}
+.bar_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.bar_text {
+  font-size: 18px;
+}
+.bar_image img {
+  width: 50px;
 }
 /* Hero Bar Section End */
 
@@ -940,45 +954,9 @@ footer .upper_Footer {
 
 .dial-icons {
   position: relative;
-  border: 3px solid #0d6efd;
+  border: 3px solid white;
   border-radius: 50%;
-  background: #f6f7fb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dial-icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s;
-}
-
-.dial-icon:hover {
-  transform: scale(1.3);
-  z-index: 10;
-}
-
-.dial-center {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #0d6efd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  pointer-events: none;
-}
-.dial-icons {
-  position: relative;
-  border: 3px solid #0d6efd;
-  border-radius: 50%;
-  background: #f6f7fb;
+  background: var(--Primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1008,13 +986,13 @@ footer .upper_Footer {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: white;
+  background: var(--dark-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #0d6efd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: var(--Primary-color);
+  box-shadow: 0 4px 12px rgba(255, 200, 107, 0.3) 0px 0px 91px 16px;
   pointer-events: none;
 }
