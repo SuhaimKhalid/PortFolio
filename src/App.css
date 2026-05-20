@@ -18,8 +18,9 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--dark-color);
 }
@@ -454,47 +455,53 @@ nav ul li .nav-link {
   grid-template-columns: 2fr 0.3fr 2fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "horiseon_des line_grid horiseon_card"
-    "ameren_card line_grid ameren_des"
-    "elab_des line_grid elab_card"
-    "dental_card line_grid dental_des"
-    "socreLoad_des line_grid socreLoad_card";
+    "event_paradise_des line_grid event_paradise_card"
+    "dream_fest_card line_grid dream_fest_des"
+    "news_article_des line_grid news_article_card"
+    "M_P_card line_grid M_P_des"
+    "RPS_des line_grid RPS_card"
+    "Quiz_card line_grid Quiz_des";
 }
 
 /* Grid text area */
-.horiseon_grid_des {
-  grid-area: horiseon_des;
+.event_paradise_des {
+  grid-area: event_paradise_des;
 }
-.ameren_grid_des {
-  grid-area: ameren_des;
+.dream_fest_des {
+  grid-area: dream_fest_des;
 }
-.elab_grid_des {
-  grid-area: elab_des;
+.news_article_des {
+  grid-area: news_article_des;
 }
-.dental_grid_des {
-  grid-area: dental_des;
+.M_P_des {
+  grid-area: M_P_des;
 }
-.socreLoad_grid_des {
-  grid-area: socreLoad_des;
+.RPS_des {
+  grid-area: RPS_des;
+}
+.Quiz_des {
+  grid-area: Quiz_des;
 }
 
 /* Grid Image Area */
-.horiseon_card {
-  grid-area: horiseon_card;
+.event_paradise_card {
+  grid-area: event_paradise_card;
 }
-.ameren_card {
-  grid-area: ameren_card;
+.dream_fest_card {
+  grid-area: dream_fest_card;
 }
-.elab_card {
-  grid-area: elab_card;
+.news_article_card {
+  grid-area: news_article_card;
 }
-.dental_card {
-  grid-area: dental_card;
+.M_P_card {
+  grid-area: M_P_card;
 }
-.socreLoad_card {
-  grid-area: socreLoad_card;
+.RPS_card {
+  grid-area: RPS_card;
 }
-
+.Quiz_card {
+  grid-area: Quiz_card;
+}
 /* Work Section End */
 
 /* Skill section start */

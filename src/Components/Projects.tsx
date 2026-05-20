@@ -3,6 +3,7 @@ import newsArticle from "../../public/ProjectsImages/New Article.png";
 import marketPlace from "../../public/ProjectsImages/MarketPlace.png";
 import rps from "../../public/ProjectsImages/RPS.png";
 import quizGame from "../../public/ProjectsImages/quiz Game.png";
+import dreamFest from "../../public/Gifs/DreamFest.gif";
 export const Projects = () => {
   return (
     <>
@@ -14,11 +15,15 @@ export const Projects = () => {
             <div className="line_grid">
               <div className="triangle"></div>
             </div>
-            <div className="description_grid horiseon_grid_des">
+            {/* 1 */}
+            <div className="description_grid event_paradise_des">
               <h4>Event Paradise</h4>
-              <p>React/TypeScript/Node.js/Express/PostgreSQL/Stripe/Supabase</p>
+              <p>
+                React, TypeScript, Node.js, Express, PostgreSQL, Axios, Stripe,
+                Supabase
+              </p>
             </div>
-            <div className="card horiseon_card">
+            <div className="card event_paradise_card">
               <div className="grid_card">
                 <a href="https://eventparadise.netlify.app/" target="_blank">
                   <img
@@ -39,12 +44,39 @@ export const Projects = () => {
                 </p>
               </div>
             </div>
-
-            <div className="description_grid ameren_grid_des">
-              <h4>News Artilce</h4>
-              <p>React/JavaScript/Node.js/Express/PostgreSQL/Axios/Jest</p>
+            {/* 2 */}
+            <div className="description_grid dream_fest_des">
+              <h4>Dream Fest</h4>
+              <p>React, TypeScript, GSAP, Vite, Jest</p>
             </div>
-            <div className="card ameren_card">
+            <div className="card dream_fest_card">
+              <div className="grid_card">
+                <a href="https://dream-fest.netlify.app/" target="_blank">
+                  <img src={dreamFest} alt="Dream Fest Website Gif Thumbnail" />
+                </a>
+              </div>
+              <div className="card-body">
+                <p className="card-text">
+                  A React and TypeScript-based web application that allows users
+                  to create and simulate custom festivals and events. Users can
+                  configure festival details such as duration, audience size,
+                  artists, stages, and vendors, then run simulations to
+                  calculate attendance, revenue, and expenses using dynamic
+                  factors like weather and day/night conditions. The project
+                  focuses on clean component architecture, state management,
+                  reusable logic, and financial/data modelling, with unit-tested
+                  core functionality using Jest.
+                </p>
+              </div>
+            </div>
+            {/* 3 */}
+            <div className="description_grid news_article_des">
+              <h4>News Artilce</h4>
+              <p>
+                React, JavaScript, Node.js, Express, PostgreSQL, Axios, Jest
+              </p>
+            </div>
+            <div className="card news_article_card">
               <div className="grid_card">
                 <a href="https://news-artilce.netlify.app/" target="_blank">
                   <img
@@ -66,12 +98,12 @@ export const Projects = () => {
                 </p>
               </div>
             </div>
-
-            <div className="description_grid elab_grid_des">
+            {/* 4 */}
+            <div className="description_grid M_P_des">
               <h4>Market Place</h4>
-              <p>React/JavaScript/Node.js/Express/Axios</p>
+              <p>React ,JavaScript, Node.js, Express, Axios</p>
             </div>
-            <div className="card elab_card">
+            <div className="card M_P_card">
               <div className="grid_card">
                 <a href="https://sk-marketplace.netlify.app/" target="_blank">
                   <img
@@ -94,12 +126,12 @@ export const Projects = () => {
                 </p>
               </div>
             </div>
-
-            <div className="description_grid dental_grid_des">
+            {/* 5 */}
+            <div className="description_grid RPS_des">
               <h4>Rock Paper Scissors</h4>
-              <p>HTML/CSS/Bootstrap/JavaScript/J-Query</p>
+              <p>HTML, CSS, Bootstrap, JavaScript, J-Query</p>
             </div>
-            <div className="card dental_card">
+            <div className="card RPS_card">
               <div className="grid_card">
                 <a href="https://rps007.netlify.app/" target="_blank">
                   <img
@@ -121,12 +153,13 @@ export const Projects = () => {
                 </p>
               </div>
             </div>
+            {/* 6 */}
 
-            <div className="description_grid socreLoad_grid_des">
+            <div className="description_grid Quiz_des">
               <h4>Quiz Game</h4>
-              <p>HTML/CSS/Bootstrap/JavaScript/J-Query</p>
+              <p>HTML, CSS, Bootstrap, JavaScript, J-Query</p>
             </div>
-            <div className="card socreLoad_card ">
+            <div className="card Quiz_card ">
               <div className="grid_card">
                 <a href="https://codequiz1.netlify.app/" target="_blank">
                   <img src={quizGame} alt="Quiz Game Website Image Thumbnail" />
