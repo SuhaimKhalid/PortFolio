@@ -1,9 +1,10 @@
-import eventParadise from "../../public/ProjectsImages/Event_Paradise.png";
-import newsArticle from "../../public/ProjectsImages/New Article.png";
+import newsArticle from "../../public/Gifs/news_article.gif";
 import marketPlace from "../../public/ProjectsImages/MarketPlace.png";
 import rps from "../../public/ProjectsImages/RPS.png";
 import quizGame from "../../public/ProjectsImages/quiz Game.png";
 import dreamFest from "../../public/Gifs/DreamFest.gif";
+import eventParadise from "../../public/Gifs/event_paradise.gif";
+
 export const Projects = () => {
   return (
     <>

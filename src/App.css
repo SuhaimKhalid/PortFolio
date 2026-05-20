@@ -411,7 +411,7 @@ nav ul li .nav-link {
 }
 .work_section .grid_card {
   width: 100%;
-  height: 300px;
+  height: auto;
   border: 5px solid var(--Primary-color);
   overflow: hidden;
   position: relative;
