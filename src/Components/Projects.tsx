@@ -102,7 +102,7 @@ export const Projects = () => {
             {/* 4 */}
             <div className="description_grid M_P_des">
               <h4>Market Place</h4>
-              <p>React ,JavaScript, Node.js, Express, Axios</p>
+              <p>React, JavaScript, Node.js, Express, Axios</p>
             </div>
             <div className="card M_P_card">
               <div className="grid_card">
