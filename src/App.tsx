@@ -12,21 +12,30 @@ import { Experience } from "./Components/Expreience";
 import { Projects } from "./Components/Projects";
 import { SKills } from "./Components/Skills";
 import { Footer } from "./Components/Footer";
+import { SplashScreen } from "./Components/SplashScreen";
+import { useState } from "react";
 
 function App() {
+  const [splash, setSplash] = useState(true);
   return (
     <>
       <main className="page_container">
-        <Header />
-        <div className="scoll_container">
-          <HeroSection />
+        {splash ? (
+          <SplashScreen setSplash={setSplash} />
+        ) : (
+          <>
+            <Header />
+            <div className="scoll_container">
+              <HeroSection />
 
-          <About />
-          <Experience />
-          <Projects />
-          <SKills />
-          <Footer />
-        </div>
+              <About />
+              <Experience />
+              <Projects />
+              <SKills />
+              <Footer />
+            </div>
+          </>
+        )}
       </main>
     </>
   );
