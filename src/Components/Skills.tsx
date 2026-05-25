@@ -56,14 +56,14 @@ export const SKills = () => {
       });
 
       // Skills stagger animation (ONE BY ONE)
-      gsap.from(skillsRef.current.children, {
+      gsap.from(".skill_grid_card", {
         opacity: 0,
         y: 40,
         duration: 1.5,
         stagger: 0.3,
         ease: "power2.out",
         scrollTrigger: {
-          trigger: skillsRef.current,
+          trigger: ".skill_grid_card",
           start: "top 80%",
           end: "top 40%",
           scrub: 5,
@@ -79,16 +79,44 @@ export const SKills = () => {
         <h3 className="skills_title" ref={titleRef}>
           My Skills
         </h3>
-
         <div className="skill_show" ref={skillsRef}>
-          {icons.map((skill, index) => (
-            <div className="skill_grid_card" key={index}>
-              <img src={skill.src} alt={skill.name} />
-              <div className="skill_des">
-                <h4>{skill.name}</h4>
+          {/* Row 1 */}
+          <div className="row row-1">
+            {icons.slice(0, 5).map((skill, index) => (
+              <div className="skill_grid_card" key={index}>
+                <img src={skill.src} alt={skill.name} />
+                <div className="skill_des">
+                  <h4>{skill.name}</h4>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Row 2 */}
+          <div className="row row-2">
+            {icons.slice(5, 9).map((skill, index) => (
+              <div className="skill_grid_card" key={index + 5}>
+                <img src={skill.src} alt={skill.name} />
+
+                <div className="skill_des">
+                  <h4>{skill.name}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Row 3 */}
+          <div className="row row-3">
+            {icons.slice(9, 12).map((skill, index) => (
+              <div className="skill_grid_card" key={index + 9}>
+                <img src={skill.src} alt={skill.name} />
+
+                <div className="skill_des">
+                  <h4>{skill.name}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

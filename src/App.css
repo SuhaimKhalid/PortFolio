@@ -519,13 +519,17 @@ nav ul li .nav-link {
 
 .skill_show {
   display: flex;
+
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
+  align-items: center;
 }
 
 .skill_grid_card {
   width: 150px;
+  height: 150px;
   background: var(--dark-color);
   text-align: center;
   padding: 20px;
@@ -540,6 +544,7 @@ nav ul li .nav-link {
 }
 .skill_grid_card img {
   width: 60px;
+  height: auto;
 }
 .skill_grid_card h4 {
   color: white;
@@ -552,7 +557,7 @@ nav ul li .nav-link {
 
 /* Footer Section Start */
 footer {
-  background-color: var(--bs-dark);
+  background-color: var(--dark-color);
   padding: 20px 0px;
 }
 
@@ -651,6 +656,7 @@ footer .upper_Footer {
   text-align: center;
   color: white;
   width: 25%;
+  overflow: hidden;
 }
 
 .social_link_center {

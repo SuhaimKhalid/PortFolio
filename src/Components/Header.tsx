@@ -68,11 +68,7 @@ export const Header = () => {
                     Skills
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#recommendations">
-                    Recommendations
-                  </a>
-                </li>
+
                 <li className="nav-item">
                   <a className="nav-link" href="#contact_me">
                     Contact Me

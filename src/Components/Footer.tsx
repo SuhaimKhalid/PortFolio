@@ -1,16 +1,56 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export const Footer = () => {
+  const container = useRef(null);
+  const footer_title = useRef(null);
+  const fot_col = useRef(null);
+  useGSAP(
+    () => {
+      gsap.from(footer_title.current, {
+        opacity: 0,
+        y: -40,
+        scrollTrigger: {
+          trigger: footer_title.current,
+
+          start: "top 70%",
+          end: "top 40%",
+          scrub: 5,
+        },
+      });
+      gsap.from(fot_col.current, {
+        opacity: 0,
+        y: 40,
+        duration: 1.5,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: fot_col.current,
+
+          start: "top 90%",
+          end: "top 70%",
+          scrub: 5,
+        },
+      });
+    },
+    { scope: container },
+  );
   return (
     <>
       <footer id="contact_me">
         {/* <!-- upper Footer  --> */}
         <div className="upper_Footer">
           <div className="line left"></div>
-          <div className="text">Contact Me</div>
+          <div className="text" ref={footer_title}>
+            Lets Talk
+          </div>
           <div className="line right"></div>
         </div>
         {/* <!-- Footer Body --> */}
         <div className="container ft_container">
-          <div className="ft_row">
+          <div className="ft_row" ref={fot_col}>
             <div className="footer_col">
               <span>
                 <i className="fas fa-envelope"></i>
