@@ -12,7 +12,7 @@ import git from "../../public/Icons/git.png";
 import GSAP from "../../public/Icons/gsap.png";
 
 import { useGSAP } from "@gsap/react";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
