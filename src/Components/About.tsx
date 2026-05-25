@@ -12,9 +12,10 @@ export const About = () => {
                 Full-Stack Developer creating responsive and engaging
                 <span> user interfaces (UI)</span> and scalable
                 <span> server-side applications</span> using{" "}
-                <span> React.js</span>,<span> Node.js</span>,{" "}
-                <span>Express.js</span>, and <span> PostgreSQL</span>.
-                Experienced in <span> RESTful API development</span>,
+                <span> React.js</span>,<span> TypeScript</span>,
+                <span> Node.js</span>, <span>Express.js</span>, and{" "}
+                <span> PostgreSQL</span>. Experienced in{" "}
+                <span> RESTful API development</span>,
                 <span> database design</span>,{" "}
                 <span> performance optimization</span>, and writing clean,
                 maintainable code with

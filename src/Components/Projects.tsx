@@ -4,15 +4,54 @@ import rps from "../../public/ProjectsImages/RPS.png";
 import quizGame from "../../public/ProjectsImages/quiz Game.png";
 import dreamFest from "../../public/Gifs/DreamFest.gif";
 import eventParadise from "../../public/Gifs/event_paradise.gif";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export const Projects = () => {
+  const container = useRef(null);
+  const titleRef = useRef(null);
+  const gridRef = useRef(null);
+  useGSAP(
+    () => {
+      gsap.from(titleRef.current, {
+        y: -30,
+        opacity: 0,
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 90%",
+          end: "top 60%",
+          scrub: 2,
+        },
+      });
+
+      gsap.from(gridRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: gridRef.current,
+          start: "top 85%",
+          end: "top 65%",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: container },
+  );
   return (
     <>
       <section className="work_section" id="work">
-        <div className="container">
-          <h3>Projects</h3>
+        <div className="container" ref={container}>
+          <h3 className="project_title" ref={titleRef}>
+            Projects
+          </h3>
 
-          <div className="grid_container">
+          <div className="grid_container" ref={gridRef}>
             <div className="line_grid">
               <div className="triangle"></div>
             </div>

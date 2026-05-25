@@ -1,5 +1,7 @@
 :root {
-  --dark-color: #34353a;
+  --dark-color: #050920;
+  --dark-color2: #34353a;
+  --dark-color3: #232738;
   --light-dark-color: #3d3e42;
   --Primary-color: #ffc86b;
   --titles_color: #e84242;
@@ -7,9 +9,9 @@
   --Navbar_tab_color: #00ebff;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -197,73 +199,40 @@ nav ul li .nav-link {
 /* ============================= */
 
 /* Hero Bar Section Start */
-.experience-bar {
-  background: #facc15; /* yellow-400 */
-  padding: 12px 20px;
-  border-radius: 8px;
-  display: flex;
-  gap: 25px;
-  flex-wrap: wrap;
-  font-size: 15px;
-  font-weight: 600;
-  align-items: center;
-}
 
-.experience-bar .item {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
 .hero_bar {
-  background-color: var(--Primary-color);
+  background-color: var(--dark-color);
+  border-top: 2px solid var(--Primary-color);
   padding: 10px 0px;
+  padding-top: 50px;
 }
 
-.hero_bar .text_area {
-  display: flex;
-  justify-content: space-around;
-}
-
-.hero_bar .text_area .inner_area {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.hero_bar .text_area .inner_area h3 {
-  font-size: 70px;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.hero_bar .text_area .inner_area p {
-  font-size: 15px;
-  padding-left: 6px;
-  text-transform: uppercase;
-}
-
-.hero_bar .images_area {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero_bar .images_area img {
-  width: 82px;
-}
 .bar_item {
+  text-align: center;
+  background-color: var(--dark-color2);
+  height: 300px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid var(--Primary-color);
+}
+.bar_item:hover {
+  box-shadow: rgb(237 211 127 / 69%) 0px 5px 15px;
+}
+.bar_col_inner {
+  padding: 20px;
+}
+.bar_col_inner hr {
+  color: #ffc86b;
 }
 .bar_text {
-  font-size: 18px;
-  color: var(--dark-color);
+  font-size: 1.5rem;
+  color: var(--Primary-color);
   font-weight: 700;
 }
-.bar_image img {
-  width: 50px;
+.bar_col_inner p {
+  color: white;
 }
 /* Hero Bar Section End */
 
@@ -310,13 +279,12 @@ nav ul li .nav-link {
 /* Experience Section Start */
 
 .experience_section {
-  background-color: var(--light-dark-color);
+  background-color: var(--dark-color3);
   color: white;
   padding: 70px 0px 20px;
 }
 
 .experience_section .row {
-  transition: all 0.3s ease-in-out 0s;
   padding: 50px 10px;
   border-bottom: 2px solid rgb(93, 93, 93);
   margin: 20px 0px;
@@ -362,7 +330,6 @@ nav ul li .nav-link {
 
 .experience_section .row:hover {
   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
-  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience_section .row:hover .exp_circle {
@@ -417,8 +384,10 @@ nav ul li .nav-link {
 .work_section .description_grid {
   color: white;
   text-align: center;
-  position: relative;
-  top: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .work_section .description_grid h4 {
   font-size: 30px;
@@ -432,7 +401,7 @@ nav ul li .nav-link {
   width: 100%;
   height: auto;
   border: 5px solid var(--Primary-color);
-  overflow: hidden;
+
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -457,6 +426,7 @@ nav ul li .nav-link {
 }
 .work_section .grid_card img {
   width: 100%;
+  height: 300px;
 }
 .work_section .triangle {
   width: 0;
@@ -482,6 +452,9 @@ nav ul li .nav-link {
     "Quiz_card line_grid Quiz_des";
 }
 
+.grid_card img {
+  display: block;
+}
 /* Grid text area */
 .event_paradise_des {
   grid-area: event_paradise_des;
@@ -521,11 +494,12 @@ nav ul li .nav-link {
 .Quiz_card {
   grid-area: Quiz_card;
 }
+
 /* Work Section End */
 
 /* Skill section start */
 .skill_section {
-  background-color: var(--light-dark-color);
+  background-color: var(--dark-color3);
   padding: 46px 0px;
 }
 .skill_section h3 {
@@ -546,29 +520,26 @@ nav ul li .nav-link {
 .skill_show {
   display: flex;
   flex-wrap: wrap;
-  /* Adjust as needed */
-  /* Adjust as needed */
-  /* Adjust the gap between items as needed */
   justify-content: center;
   margin-top: 30px;
 }
 
 .skill_grid_card {
-  width: 259px;
+  width: 150px;
   background: var(--dark-color);
   text-align: center;
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
-  transition: 0.2s ease-in-out;
+  /* transition: 0.2s ease-in-out; */
 }
 .skill_grid_card:hover {
-  background-color: var(--Primary-color);
+  /* background-color: var(--Primary-color); */
   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
-  transition: 0.2s ease-in-out;
+  /* transition: 0.2s ease-in-out; */
 }
 .skill_grid_card img {
-  width: 116px;
+  width: 60px;
 }
 .skill_grid_card h4 {
   color: white;
@@ -782,16 +753,18 @@ footer .upper_Footer {
     grid-template-columns: 0.1fr 1fr;
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
     grid-template-areas:
-      "line_grid horiseon_des"
-      "line_grid horiseon_card"
-      "line_grid ameren_des"
-      "line_grid ameren_card"
-      "line_grid elab_des"
-      "line_grid elab_card"
-      "line_grid dental_des"
-      "line_grid dental_card"
-      "line_grid socreLoad_des"
-      "line_grid socreLoad_card";
+      "line_grid event_paradise_des"
+      "line_grid event_paradise_card"
+      "line_grid dream_fest_des"
+      "line_grid dream_fest_card"
+      "line_grid news_article_des"
+      "line_grid news_article_card"
+      "line_grid M_P_des"
+      "line_grid M_P_card"
+      "line_grid RPS_des"
+      "line_grid RPS_card"
+      "line_grid Quiz_des"
+      "line_grid Quiz_card";
   }
   .work_section .description_grid {
     top: 0;

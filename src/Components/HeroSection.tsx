@@ -16,9 +16,6 @@ export const HeroSection = () => {
             </div>
             <div className="col-lg-6  col-sm-12 col-md-6 hero_description">
               <Slide direction="right">
-                <Zoom>
-                  <h1 className="h1_heroSection">Hi</h1>
-                </Zoom>
                 <h2>
                   My name is <span>Suhaim Khalid</span>
                 </h2>

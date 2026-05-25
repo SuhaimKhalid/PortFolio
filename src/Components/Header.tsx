@@ -17,7 +17,8 @@ export const Header = () => {
         y: -50,
         opacity: 0,
         duration: 1.5,
-        stagger: 0.3,
+        stagger: 0.2,
+        ease: "power2.out",
       });
     },
     { scope: nav_ani },

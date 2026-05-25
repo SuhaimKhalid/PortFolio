@@ -3,18 +3,22 @@ import html from "../../public/Icons/Html.png";
 import css from "../../public/Icons/Css.png";
 import bootstrap from "../../public/Icons/Bootstrap.png";
 import javascript from "../../public/Icons/JS4.png";
+import typescript from "../../public/Icons/typescript.png";
 import jquery from "../../public/Icons/Jquery.png";
 import reactIcon from "../../public/Icons/React.png";
 import node from "../../public/Icons/Node1.png";
 import express from "../../public/Icons/Express js.png";
 import sql from "../../public/Icons/Postgre.png";
 import git from "../../public/Icons/Github.png";
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 const icons = [
   { src: html, name: "HTML" },
   { src: css, name: "CSS" },
   { src: bootstrap, name: "Bootstrap" },
   { src: javascript, name: "JavaScript" },
+  { src: typescript, name: "TypeScript" },
   { src: jquery, name: "jQuery" },
   { src: reactIcon, name: "React" },
   { src: node, name: "Node.js" },
@@ -112,10 +116,27 @@ export const DialIcons: React.FC<RotatableDialProps> = ({
     return () => cancelAnimationFrame(id);
   }, [dragging, autoRotateSpeed]);
 
+  // GSAP
+  useGSAP(
+    () => {
+      gsap.from(dialRef.current, {
+        opacity: 0,
+        duration: 2,
+        scale: 0,
+        scrollTrigger: {
+          trigger: dialRef.current,
+          start: "top 100%",
+          end: "top 70%",
+          scrub: 5,
+        },
+      });
+    },
+    { scope: dialRef },
+  );
   return (
     <div
       ref={dialRef}
-      className="dial-icons"
+      className="dial-icons icon_dial"
       style={{ width: size, height: size }}
       onPointerDown={onPointerDown}
     >
