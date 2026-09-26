@@ -1,5 +1,5 @@
 import cv from "../assets/CV/SuhaimKhalid_CV.pdf";
-import profieImage from "../../public/Images/Profile_1.jpg";
+import profieImage from "../../public/Profile_Pic/Pic3.jpg";
 import { Slide } from "react-awesome-reveal";
 import { HeroBar } from "./HeroBar";
 
